@@ -12,7 +12,7 @@ public class SpringHibernateProjectApplication
 	public static void main(String[] args)
 	{
 		SpringApplication.run(SpringHibernateProjectApplication.class, args);
-		System.out.println("*********Start Spring HIbernate Jpa MySql project***********");
+		System.out.println("*********Start Spring HIbernate Jpa MySql RestApi project***********");
 	}
 }
 
