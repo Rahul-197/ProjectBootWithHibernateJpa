@@ -9,6 +9,10 @@ import javax.persistence.Table;
 @Table(name="product_table")
 public class Product 
 {
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	@Id
 	@GeneratedValue
 	private int id;

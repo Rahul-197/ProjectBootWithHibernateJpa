@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springHibernate.SpringHibernateProject.entity.Product;
+import com.springHibernate.SpringHibernateProject.loginJsp.LoginController;
 import com.springHibernate.SpringHibernateProject.service.ProductSercvice;
 
 @RestController
@@ -30,13 +32,13 @@ public class ProductController {
 		return service.saveProducts(products);
 		
 	}
-	@GetMapping("/product/{id}")
+	@GetMapping("/productById/{id}")
 	public Product findProductById(@RequestBody int id)
 	{
 		return service.getProduct(id);
 		
 	}
-	@GetMapping("/product/{name}")
+	@GetMapping("/productByName/{name}")
 	public Product findProductByName(@RequestBody String name)
 	{
 		return service.findByName(name);
